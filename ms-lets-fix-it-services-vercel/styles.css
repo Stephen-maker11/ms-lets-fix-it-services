@@ -743,7 +743,9 @@ h1 {
 .detail-list a,
 .detail-list div {
   display: grid;
-  gap: 4px;
+  gap: 5px;
+  align-content: center;
+  min-height: 74px;
   padding: 14px 16px;
   border-left: 4px solid rgba(36, 104, 216, 0.88);
   background: var(--white);
@@ -763,7 +765,20 @@ h1 {
 }
 
 .detail-list strong {
+  display: block;
   line-height: 1.45;
+}
+
+.detail-list small {
+  display: block;
+  color: var(--blue-dark);
+  font-size: 0.98rem;
+  font-weight: 900;
+  line-height: 1.4;
+}
+
+.person-card {
+  border-left-color: rgba(217, 35, 46, 0.88) !important;
 }
 
 .map-placeholder {
@@ -914,13 +929,34 @@ h1 {
   line-height: 1.7;
 }
 
+.footer-contact-list {
+  display: grid;
+  gap: 12px;
+}
+
 .site-footer a {
   display: block;
   margin: 0 0 8px;
+  line-height: 1.5;
 }
 
 .site-footer a:hover {
   color: var(--white);
+}
+
+.footer-contact-list a {
+  margin: 0;
+}
+
+.footer-person {
+  display: grid;
+  gap: 3px;
+}
+
+.footer-person span {
+  color: var(--white);
+  font-weight: 900;
+  line-height: 1.45;
 }
 
 .footer-brand {
@@ -1194,6 +1230,51 @@ h1 {
 
   .contact-actions .button {
     width: 100%;
+  }
+
+  .detail-list {
+    gap: 12px;
+  }
+
+  .detail-list a,
+  .detail-list div {
+    min-height: 78px;
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  .detail-list span {
+    font-size: 0.76rem;
+  }
+
+  .detail-list strong,
+  .detail-list small {
+    font-size: 1rem;
+    word-break: break-word;
+  }
+
+  .site-footer {
+    gap: 24px;
+    padding-top: 42px;
+    padding-bottom: 26px;
+  }
+
+  .site-footer h2 {
+    margin-bottom: 14px;
+  }
+
+  .footer-contact-list {
+    gap: 14px;
+  }
+
+  .footer-contact-list a,
+  .footer-person span {
+    font-size: 1rem;
+  }
+
+  .footer-person {
+    gap: 5px;
+    padding: 2px 0;
   }
 }
 
